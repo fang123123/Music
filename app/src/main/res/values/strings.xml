@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="start_Time">0:00</string>
+    <string name="end_Time">3:00</string>
+    <string name="button_previous">上一曲</string>
+    <string name="button_pause">暂停</string>
+    <string name="button_next">下一曲</string>
+    <string name="music_title">平淡日子里的刺</string>
+    <string name="music_singer">宋冬野</string>
+    <string name="music_size">4.0M</string>
+    <string name="music_duration">3:00</string>
+</resources>

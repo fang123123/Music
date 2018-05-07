@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context="com.example.fj.music.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListMusic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/CurTime"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/start_Time" />
+
+        <SeekBar
+            android:id="@+id/MainSeekBar"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/TotalTime"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/end_Time" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/MainButton_Previous"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="@string/button_previous"/>
+        <Button
+            android:id="@+id/MainButton_pause"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="@string/button_pause"/>
+        <Button
+            android:id="@+id/MainButton_next"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="@string/button_next"/>
+    </LinearLayout>
+</LinearLayout>
